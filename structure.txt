@@ -1,0 +1,14 @@
+coffee-order-backend/
+├── config/
+│   └── database.js          # Ініціалізація та підключення SQLite
+├── controllers/
+│   ├── menuController.js    # Логіка для роботи з меню
+│   └── orderController.js   # Логіка для обробки замовлень
+├── routes/
+│   ├── menuRoutes.js        # Маршрути (ендпоїнти) для меню
+│   └── orderRoutes.js       # Маршрути для замовлень
+├── middlewares/
+│   └── validator.js         # Перевірка (валідація) вхідних даних
+├── coffee_order.db          # Файл бази даних SQLite (генерується авто)
+├── server.js                # Точка входу (Express сервер)
+└── package.json
