@@ -11,7 +11,10 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Підключення роутів
+// Обслуговування статичних файлів Front-end з папки public
+app.use(express.static('public'));
+
+// Підключення REST API роутів
 app.use('/api/menu', menuRoutes);
 app.use('/api/orders', orderRoutes);
 

@@ -4,7 +4,7 @@ const orderController = require('../controllers/orderController');
 const { validateOrder } = require('../middlewares/validator');
 
 router.get('/', orderController.getOrders);
-router.post('/', validateOrder, orderController.createOrder); // З використанням middleware валідації!
+router.post('/', validateOrder, orderController.createOrder);
 router.put('/:id/status', orderController.updateOrderStatus);
 
 module.exports = router;

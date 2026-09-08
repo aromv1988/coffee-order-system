@@ -9,6 +9,10 @@ coffee-order-backend/
 │   └── orderRoutes.js       # Маршрути для замовлень
 ├── middlewares/
 │   └── validator.js         # Перевірка (валідація) вхідних даних
+├── public/                  # Нова папка для Front-end
+│   ├── index.html           # Меню клієнта
+│   ├── barista.html         # Дашборд бариста
+│   └── app.js               # Інтеграційний JS-скрипт (Fetch API)
 ├── coffee_order.db          # Файл бази даних SQLite (генерується авто)
-├── server.js                # Точка входу (Express сервер)
+├── server.js                # Оновлена точка входу (раздає статику)
 └── package.json
